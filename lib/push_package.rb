@@ -60,7 +60,7 @@ class PushPackage
     end
 
     ## overwrite existing push packages
-    File.delete(output_path) if File.exists?(output_path)
+    # File.delete(output_path) if File.exists?(output_path)
 
     zip = Zip::File.open(output_path, Zip::File::CREATE)
 
